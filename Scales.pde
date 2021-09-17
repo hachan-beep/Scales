@@ -2,14 +2,17 @@ void setup() {
   size(500, 500);  //feel free to change the size
   noLoop(); //stops the draw() function from repeating
   int x = (int)(Math.random()*256)+1;
-int y = (int)(Math.random()*256)+1;
-int z = (int)(Math.random()*256)+1;
+  int y = (int)(Math.random()*256)+1;
+  int z = (int)(Math.random()*256)+1;
 background(y,x,z);
 }
 void draw() {
   scale();
 }
 void scale() {
+  int x = (int)(Math.random()*256)+1;
+  int y = (int)(Math.random()*256)+1;
+  int z = (int)(Math.random()*256)+1;
   for(int i = 25; i <1000;i+=50){
   for(int h = 25; h <1000;h+=50){
     stroke(1);
@@ -22,5 +25,3 @@ triangle(i-19,h-15,i+1,h+25,i+20,h-15);
   }
 }
 }
-
-
